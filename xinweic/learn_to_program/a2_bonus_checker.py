@@ -1,3 +1,6 @@
+# Usage: python a2_bonus_checker.py 'your_answer_here.py'
+# 'your_answer_here.py' should contain function can_be_combined()
+
 import sys
 import random
 import a2
