@@ -1,0 +1,44 @@
+--------------------------------------------------------------------------------
+a1.py
+=====
+seconds_difference -> return time2 - time1
+hours_difference -> seconds_difference / 60.0 / 60.0
+to_float_hours -> convert h:m:s to float, where 1 hour = 1.0
+to_24_hour_clock -> return hours in 24 hour range
+
+get_hours -> returns the number of hours in a given time in seconds
+    get_hours(7600) = 2
+    h = 7600 // 3600
+to limit to 24 hour clock we need to:
+    h = h % 24
+
+get_minutes -> returns the number of minutes in a given time in seconds
+               after subtracting the number of hours
+    h = 7600 // 3600
+    m = (7600 - h * 3600) // 60
+        |<--remainder-->| or,
+    m = (7600 % 3600) // 60
+
+get_seconds -> returns the number of seconds in a given time in seconds
+               after subtracting the number of hours and minutes
+
+    h = 7600 // 3600
+    m = 7600 % 3600 // 60
+    s = 7600 - h * 3600 - (m * 60)
+or,
+    s = (7600 % 3600) % 60
+
+time_to_utc -> find time at UTC given the original time and UTC offset
+time_from_utc -> find original time given UTC time and UTC offset
+
+--------------------------------------------------------------------------------
+a1_gui.py
+=========
+
+EXPECTED_FNS -> interface, to check against included file. If function does not
+                exist make an empty one.
+
+i.e.
+    not hasattr(a1, f) // searches module for attribute, if not found,
+    a1.__dict__[f] = lambda *x : 0 // add attribute to dict replacing with empty
+                                      function. (*x) => multiple args
