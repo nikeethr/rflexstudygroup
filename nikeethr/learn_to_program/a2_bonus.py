@@ -1,6 +1,6 @@
 import a2
 
-def has_complement_pair(xs):
+def can_be_combined(xs):
     ids = range(len(xs))
     N = get_total_length(ids, xs)
 
@@ -33,21 +33,23 @@ def has_complement_pair(xs):
     else:
         return False
 
+
 def construct_node(node, sequence, xs, ids, N):
+    l = get_total_length(node, xs)
+
+    if l == N // 2:
+        sequence.add(combine_seq(node, xs))
+        return
+
     for i in ids:
+
         if i in node:
             continue
 
-        next_node = node + [i]
-        l = get_total_length(next_node, xs)
-
-        if l > N // 2:
+        if l + len(xs[i]) > N // 2:
             continue
-        
-        if l == N // 2:
-            sequence.add(combine_seq(next_node, xs))
-        else:
-            construct_node(next_node, sequence, xs, ids, N)
+
+        construct_node(node + [i], sequence, xs, ids, N)
 
 def get_total_length(ids, xs):
     l = 0
@@ -62,6 +64,6 @@ def combine_seq(ids, xs):
     return c
 
 if __name__ == '__main__':
-    xs = ['GTA', 'TA', 'GCT', 'AT', 'C', 'CAA']
-    result = has_complement_pair(xs)
+    xs = ['A', 'T']
+    result = can_be_combined(xs)
     exit(0)
