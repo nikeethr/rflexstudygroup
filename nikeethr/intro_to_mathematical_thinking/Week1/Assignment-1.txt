@@ -1,0 +1,64 @@
+Assignment 1 - Solutions
+@todo: convert to markdown / LaTeX
+
+1.
+The man saw the woman who was holding a telescope.
+The man saw the woman by looking through a telescope.
+---
+
+2.
+a) After being apart for ten years, sisters were reunited at safeway.
+b) Large hole appears in High Street. City authorities are looking into what caused it.
+c) Mayor says passengers should wear seat belts.
+---
+
+3.
+head injuries should never be ignored.
+
+'No ailement is too complicated to treat' - all ailments are uncomplicated enough that they can be treated
+'No head injury is too trivial to ignore' - all head injuries are non-trivial enough that they can be ignored
+---
+
+4.
+If there is a fire, do not use the elevator
+
+'In case of fire, do not use elevator' - can mean 'do not use an elevator, because there might be fire'
+---
+
+5.
+'This page intentionally left blank'
+- This statement is not true because if it was, the page would be blank. This is not the case because the above text is printed on it.
+- The purpose of this statement is to inform the reader that the page does not contain any relevant information. If the page was truly blank then the reader would not know if the page was intentionally left blank or it was not printed out correctly.
+- Historically books are made by folding sheets of paper into 2,4,8 etc. Thus sometimes there may not be enough content to fill all the pages.
+
+Reformation:
+- This page is not a misprint.
+- Please turn over.
+- This page is moot.
+- This page has been left blank except for this sentence.
+---
+
+6.
+I cheated and used google...
+- "Republicans Grill IRS Chief Over Lost Emails" - http://www.byrdseed.com/ambiguous-sentences/
+- "The chicken is ready to eat" - http://www.navair.navy.mil/nawctsd/Resources/Library/Acqguide/SpecTop.htm under Contextual ambiguity
+- "Call me a cab"
+---
+
+7.
+"The temperature is hot today"
+Temperature is a concept it can't be hot.
+---
+
+8.
+Counter example:
+let n = 6
+N = 2 * 3 * 5 * 7 * 11 * 13 = 30031
+30031 = 509 * 59
+
+Therefore, 30031 is not prime and N = p1 * p2 * ... * pn + 1 is not always prime
+
+JUST FOR FUN
+
+1. Here are 5 ands in succession - and, and, and, and ,and.
+2. 'and, or, and, or, and' is not a sentence.
