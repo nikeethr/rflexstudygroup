@@ -13,18 +13,19 @@ def find_max_first_quadrant_sum(A):
         2. Any (i,j) in the first quadrant can be moved independently without affecting any other
            element in the first quadrant. To see this consider the following:
 
-           If we want to move (2N-i,j) to (i,j) we will have to flip row i but this will change the
+           If we want to move (i,2N-j) to (i,j) we will have to flip row i but this will change the
            entire row. However, if we flip every other column (in the first quadrant) except column
            j then these columns would not be affected by flipping row i. Furthermore, only (i,j) in
            column j will be affected by flipping row i.
 
-           Now, we flip row i, and flip back every other column except j we would have returned
-           every column back to its original state in the first quadrant. The only element that was
+           Now, we flip row i and flip back every other column except j we would have returned every
+           column back to its original state in the first quadrant. The only element that was
            changed would be (i,j)
 
-           We can apply a similar reasoning for (i,2N-j) -> (i,j)
-           For (2N-i,2N-j) -> (i,j) we can first flip it to (2N-i,j) or (i,2N-j) without
-           affecting the first quadrant and repeat the above reasoning.
+           We can apply a similar reasoning for (2N-i,j) -> (i,j)
+
+           For (2N-i,2N-j) -> (i,j) we can first flip it to (2N-i,j) or (i,2N-j) without affecting
+           the first quadrant and repeat the above reasoning.
 
         Then:
         Using 1. we know that the potential max value of each (i,j) in the first quadrant is given
