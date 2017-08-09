@@ -1,0 +1,62 @@
+Project discussion (2017-08-10)
+
+Model
+-----
+
+                    feedback
+     _______________________________________
+    |                                       |
+    V                                       |
+Database -> Recommendations -> UI -> User __|
+    |            ^
+    |____________|
+      learning
+
+
+Applications
+-------------
+
+1) Report generating feature
+    Why?
+    - Reports are often manually collated and visual preferences are subjective. This can make
+      reports time consuming.
+    How?
+    - Empower users to customize reports (e.g. from data generated from SAS).
+    - Learn and automatically schedule/produce graphs and reports for users.
+
+2) Guided learning
+    Why?
+    - Information overload can be crippling. The idea of this is to take the confusion out.
+    - People often get distracted from their goals due to the volatile nature of how today's society
+      operates.
+    How?
+    - Based on principles of flow and deliberate practice.
+    - Start with the user's interest, develop a smart way of assessing competancy and provide
+      practice recommendations that are slightly above the user's current skill level.
+    - Produce statistics and graphs to give user feedback on progress.
+    - For example, if one wants to learn guitar, one can start by searching for beginner
+      recommendations and upload recordings of their songs. The system will automatically recommend
+      the next step to take and techniques to try (e.g. improv/speed/scales/genres) to that are
+      relevant to the user's taste and skill level advancement.
+
+3) Computer vision
+    Why?
+    - Computer vision is fun.
+    - For example, one could use crime scene evidence to reconstruct positional information (e.g.
+      blood splatter) to judge what is and isn't possible.
+    - Another example is using drones to idenify unusual behaviours from tracking pedestrian
+      movements.
+    How?
+    - Get data from internet with lots of images
+    - Try out computer vision algorithms to R&D some interesting things.
+
+4) Internet of Things (IoT)
+    Why?
+    - Want to optimise our experience from our home/work environment, while minimising costs.
+    - We are not good at optimising things we don't pay attention to.
+    How?
+    - By allowing applications to talk to a central controller, various statistics can be gathered
+      on usage and user preferences.
+    - Optimisation algorithms can be used to switch things on and off in a smart way.
+    - Learning user behaviour and preferences can help to provide reminders. e.g. when's the last
+      time you did your laundry?
