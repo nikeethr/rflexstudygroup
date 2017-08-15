@@ -39,7 +39,7 @@ def compute_max_indivisible_set(k, S):
     for i in range(1,(k-1)//2+1):
         L += max(C[i], C[k-i])
 
-    if k % 2 == 0:
+    if k % 2 == 0 and C[k//2] > 0:
         L += 1
 
     if C[0] > 0:
