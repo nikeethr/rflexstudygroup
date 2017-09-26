@@ -1,0 +1,29 @@
+%        File: newfile.tex
+%     Created: Sun Sep 24 08:00 PM 2017 AEST
+% Last Change: Sun Sep 24 08:00 PM 2017 AEST
+%
+\documentclass[a4paper]{article}
+
+\usepackage[sumlimits,]{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
+
+\begin{document}
+Conjecture: Prove that for any natural number $n$, $2 + 2^2 + 2^3 + \dots + 2^n = 2^{n+1} - 2$
+
+Let $A(n): 2 + 2^2 + 2^3 + \dots + 2^n = 2^{n+1} - 2$
+
+Proof by induction,
+
+$A(1): 2 = 2^2 - 2$
+
+Assuming $A(n)$ is true then,
+\begin{align*}
+  A(n+1): 2 + 2^2 + 2^3 + \dots + 2^{n+1} &= 2^{n+1} - 2 + 2^{n+1} && \text{[Induction hypothesis]} \\
+  &= 2(2^{n+1}) - 2 && \text{[Algebra]} \\
+  &= 2^{n+2} - 2 && \text{[Algebra]}
+\end{align*}
+
+Therefore, the conjecture is true.
+
+\end{document}

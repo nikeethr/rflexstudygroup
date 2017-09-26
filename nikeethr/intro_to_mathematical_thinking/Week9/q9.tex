@@ -1,0 +1,35 @@
+%        File: newfile.tex
+%     Created: Sun Sep 24 08:00 PM 2017 AEST
+% Last Change: Sun Sep 24 08:00 PM 2017 AEST
+%
+\documentclass[a4paper]{article}
+
+\usepackage[sumlimits,]{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
+
+\begin{document}
+Give an example of family of intervals $A_n, n = 1,2,\dots$, such that $A_{n+1} \subset A_{n}$ for
+all n and $\cap_{n=1}^{\infty}A_n = \emptyset$.
+
+Let $A_n$ be the interval $(\frac{n}{n+1}, 1)$,
+then $A_{n+1}$ is the interval $(\frac{n+1}{n+2}, 1)$
+
+The greatest lower bound of $A_n$ is $\frac{n}{n+1}$ and the greatest lower bound of $A_{n+1}$ is
+$\frac{n+1}{n+2}$. They have the same lowest upper bound, $1$.
+\begin{align*}
+  \frac{n}{n+1} &= \frac{n}{n+1}\frac{n+2}{n+2} && \text{Multiply and divide by n+2} \\
+  &= \frac{n^2 + n}{(n+1)(n+2)} && \text{Expand out numerator} \\
+  &< \frac{n^2 + n + 1}{(n+1)(n+2)} && \text{Add 1 to numerator} \\
+  &= \frac{(n+1)^2}{(n+1)(n+2)} && \text{Factor out $n+1$ from numerator} \\
+  &= \frac{n+1}{n+2} && \text{Cancel out $n+1$}
+\end{align*}
+
+Therefore $A_{n+1} \subset A_n$ since the greatest lower bound of $A_n$ is strictly less than the
+greatest lower bound of $A_{n+1}$.
+
+Now as $n \to \infty$, $\frac{n}{n+1} \to 1$, so $A_n \to (1, 1) = \emptyset$ since there are no values in this range. The
+intersection of the empty set with any set is the empty set. Therefore, $\cap_{n=1}^{\infty}A_n =
+\emptyset$. The family of intervals that lead to this conclusion was the interval $(\frac{n}{n+1},
+1),\, n=1,2,\dots$
+\end{document}

@@ -1,0 +1,30 @@
+%        File: newfile.tex
+%     Created: Sun Sep 24 08:00 PM 2017 AEST
+% Last Change: Sun Sep 24 08:00 PM 2017 AEST
+%
+\documentclass[a4paper]{article}
+
+\usepackage[sumlimits,]{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
+
+\begin{document}
+Conjecture: For any integer $n$, the number $n^2 + n + 1$ is odd. \\\\
+We assume the conjecture is true. Any arbitrary integer, $n$, can either be odd or even. \\\\
+If $n$ is even, then $n = 2k$, for some $k \in \mathcal{Z}$ therefore,
+\begin{align*}
+n^2 + n + 1 & = (2k)^2 + 2k + 1\\
+& = 4k^2 + 2k + 1 && \text{Expanding equation} \\
+& = 2(2k^2 + 1) + 1 && \text{Factoring to the form $2r + 1$} \\
+\end{align*}
+which is odd. \\\\
+If $n$ is odd, then $n = 2k + 1$, for some $k \in \mathcal{Z}$ therefore,
+\begin{align*}
+n^2 + n + 1 & = (2k + 1)^2 + (2k + 1) + 1\\
+& = 4k^2 + 6k + 3 && \text{Expanding equation} \\
+& = 2(2k^2 + 3k + 1) + 1 && \text{Factoring to the form $2r + 1$} \\
+\end{align*}
+Which is also odd.\\
+Therefore, for any integer $n^2 + n + 1$ is odd. The conjecture is true.
+
+\end{document}

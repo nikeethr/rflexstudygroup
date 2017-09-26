@@ -1,0 +1,39 @@
+%        File: newfile.tex
+%     Created: Sun Sep 24 08:00 PM 2017 AEST
+% Last Change: Sun Sep 24 08:00 PM 2017 AEST
+%
+\documentclass[a4paper]{article}
+
+\usepackage[sumlimits,]{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
+
+\begin{document}
+Conjecture: For any integer $n$, at least one of the integers $n$, $n+2$, $n+4$ is divisible by $3$.
+\\
+Assume the conjecture is false. Then by the division theorem,
+$\exists q_1,q_2,q_3,r_1,r_2,r_3 \in \mathcal{Z}, 0 < r_1,r_2,r_3 < 3$ such that
+\begin{align}
+  n &= 3q_1 + r_1 \label{eqn:n1} \\
+  n + 2 &= 3q_2 + r_2 \label{eqn:n2} \\
+  n + 4 &= 3q_3 + r_3 \label{eqn:n3}
+\end{align}
+
+given that $r_1$ can only be $1$ or $2$, when $r_1 = 1$, (\ref{eqn:n2}) becomes
+\begin{align*}
+  3q_1 + 3 = 3q_2 + r_2 && \text{Substituting (\ref{eqn:n1}) and $r_1 = 1$} \\
+  r_2 = 3(q_1 - q_2 + 1) && \text{Re-arranging}
+\end{align*}
+
+Therefore, $n+2$ is divisible by 3 when $r_1 = 1$. Which is a contradiction.\\\\
+When $r_1 = 2$, (\ref{eqn:n3}) becomes
+\begin{align*}
+  3q_1 + 6 = 3q_3 + r_2 && \text{Substituting (\ref{eqn:n1}) and $r_1 = 2$} \\
+  r_2 = 3(q_1 - q_3 + 2) && \text{Re-arranging}
+\end{align*}
+Therefore, $n+4$ is divisible by 3 when $r_1 = 2$. Which is also a contradiction.\\\\
+We have shown that for all possible values of $r_1$ such that $n$ is not divisible by $3$ either
+$n+2$ or $n+4$ is divisible by three. The only other case is that $r_1$ is zero and $n$ is divisible
+by $3$.
+Therefore, our initial assumption is false and the conjecture must be true.
+\end{document}

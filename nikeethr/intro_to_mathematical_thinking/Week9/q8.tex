@@ -1,0 +1,29 @@
+%        File: newfile.tex
+%     Created: Sun Sep 24 08:00 PM 2017 AEST
+% Last Change: Sun Sep 24 08:00 PM 2017 AEST
+%
+\documentclass[a4paper]{article}
+
+\usepackage[sumlimits,]{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
+
+\begin{document}
+Conjecture: If the sequence $\left\{ a_n \right\}_{n=1}^{\infty}$ tends to limit $L$ as $n \to
+\infty$. then for any fixed number $M > 0$, the sequence $\left\{ Ma_n \right\}_{n=1}^{\infty}$
+tends to the limit $ML$.
+
+Since $\{a_n\}_{n=1}^{\infty} \to L$ as $n \to \infty$, by the definition of the limit for all $\delta
+> 0$ there exists $N \in \mathcal{N}$ such that $|a_n - L| < \delta$ for $n > N$.
+
+For any $\epsilon > 0$, we can choose $\epsilon = M\delta$. So, $|a_n - L| < \epsilon / M$ for some
+fixed $M$.
+Then for some $n > N$,
+\begin{equation}
+  |Ma_n - ML| = M|a_n - L| < M \frac{\epsilon}{M} = \epsilon
+\end{equation}
+
+By definition this means that $\{Ma_n\}_{n=1}^{\infty} \to ML$ as $n \to \infty$ and the conjecture
+is true.
+
+\end{document}

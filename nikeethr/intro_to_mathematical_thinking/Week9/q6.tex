@@ -1,0 +1,29 @@
+%        File: newfile.tex
+%     Created: Sun Sep 24 08:00 PM 2017 AEST
+% Last Change: Sun Sep 24 08:00 PM 2017 AEST
+%
+\documentclass[a4paper]{article}
+
+\usepackage[sumlimits,]{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
+
+\begin{document}
+Conjecture: Prove that the only prime triplets (i.e. three primes, each 2 from the next) is 3,5,7
+
+From question 5. we know that for any integer $n$, at least one of $n$, $n+2$, $n+4$ is divisible by
+3.
+
+By the definition of a prime number, this means that any three integers separated by $2$ cannot be
+prime unless one of $n$, $n+2$, $n+4$ is $3$.
+
+If $n = 3$,\\
+$n=3$, $n+2=5$, $n+4=7$, which is a prime triple which agrees with the conjecture.\\
+If $n+2 = 3$,\\
+$n=1$, $n+2=3$, $n+4=5$, 1 is not prime, so this is not a prime triple.\\
+If $n+4 = 3$,\\
+$n=-1$, $n+2=1$, $n+4=3$, 1 and -1 are not prime, so this is not a prime triple either.
+
+So, we have shown that the only possible prime triple is 3,5,7.
+
+\end{document}
